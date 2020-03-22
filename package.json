@@ -1,6 +1,6 @@
 {
   "name": "jsontocsscustomproperties",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small utility library to convert json object to CSS custom properties",
   "main": "build/index.js",
   "scripts": {
