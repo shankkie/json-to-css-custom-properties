@@ -1,0 +1,47 @@
+{
+  "name": "jsontocsscustomproperties",
+  "version": "1.0.0",
+  "description": "Small utility library to convert json object to CSS custom properties",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "dev": "watch 'npm run build' src",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shankkie/json-to-css-custom-properties.git"
+  },
+  "keywords": [
+    "css",
+    "custom",
+    "properties",
+    "json",
+    "to",
+    "css",
+    "custom",
+    "properties"
+  ],
+  "author": "Shankar Veerakandhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shankkie/json-to-css-custom-properties/issues"
+  },
+  "homepage": "https://github.com/shankkie/json-to-css-custom-properties#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "jest": "^25.1.0",
+    "np": "^6.2.0",
+    "watch": "^1.0.2"
+  }
+}
