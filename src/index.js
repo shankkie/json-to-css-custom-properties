@@ -44,10 +44,10 @@ export const jsonToCssCustomPropeties = (
  * @return {Promise}
  */
 
-export const includeStylesInHead = css => {
+export const includeStylesInHead = cssStyles => {
   let rootStyle = document.createElement("style");
   rootStyle.type = "text/css";
-  rootStyle.innerHTML = `:root { ${css.replace(/"/g, "")}  }`;
+  rootStyle.innerHTML = `:root { ${cssStyles.replace(/"/g, "")}  }`;
   document.head.appendChild(rootStyle);
 };
 
